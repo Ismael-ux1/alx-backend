@@ -6,6 +6,9 @@ from base_caching import BaseCaching
 
 
 class BasicCache(BaseCaching):
+    """
+    BasicCache is a caching system without limit
+    """
     def put(self, key, item):
         """
         Assign to the dictionary self.cache_data the item value for the key
