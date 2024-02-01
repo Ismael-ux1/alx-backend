@@ -17,6 +17,7 @@ class LRUCache(BaseCaching):
 
     # Define the put method to add a key-value pair to the cache
     def put(self, key, item):
+        """ Add a key-value pair to the cache. """
         # If the key or item is None, do nothing and return
         if key is None and item is None:
             return
@@ -45,6 +46,7 @@ class LRUCache(BaseCaching):
         self.cache_order.append(key)
 
     def get(self, key):
+        """ Retrieve a value from the cache. """
         # If the key is None or does not exist in the cache, return None
         if key is None or key not in self.cache_data:
             return None
