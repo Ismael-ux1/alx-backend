@@ -19,7 +19,7 @@ class LRUCache(BaseCaching):
     def put(self, key, item):
         """ Add a key-value pair to the cache. """
         # If the key or item is None, do nothing and return
-        if key is None and item is None:
+        if key is None or item is None:
             return
 
         # IF the key already exists in the cache
