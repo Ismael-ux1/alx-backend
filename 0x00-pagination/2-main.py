@@ -3,7 +3,6 @@
 Main file
 """
 
-
 Server = __import__('2-hypermedia_pagination').Server
 
 server = Server()
