@@ -4,6 +4,8 @@ from typing import Tuple
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
+    """ A function that takes two argumetns page and page size """
+
     # Calculate the start index for the given page number and page size
     start_index = (page - 1) * page_size
 
