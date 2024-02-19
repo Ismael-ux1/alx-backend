@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{ _('home_title') }}</title>
+</head>
+
+<body>
+  <h1>{{ _('home_header') }}</h1>
+  <p>
+    {% if g.user %}
+        Welcome, {{ g.user['name'] }}!
+    {% else %}
+        Welcome, Guest!
+    {% endif %}
+  </p>
+</body>
+
+</html>
