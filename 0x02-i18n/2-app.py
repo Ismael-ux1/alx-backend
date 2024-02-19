@@ -19,7 +19,7 @@ app.config.from_object(Config)
 
 
 @babel.localeselector
-def get_local():
+def get_locale():
     """
     Function to determine the best maching language from the,
     client's Accept-language header
