@@ -10,9 +10,9 @@
   <h1>{{ _('home_header') }}</h1>
   <p>
     {% if g.user %}
-        Welcome, {{ g.user['name'] }}!
+    {{ _('logged_in_as', username=g.user.name) }}
     {% else %}
-        Welcome, Guest!
+    {{ _('not_logged_in') }}
     {% endif %}
   </p>
 </body>
