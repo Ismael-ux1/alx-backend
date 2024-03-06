@@ -28,7 +28,7 @@ function displaySchoolValue(schoolName) {
     if (err) {
       console.error('Error getting value:', err.message);
     } else {
-      console.log(`Value for ${schoolName}:`, value);
+      console.log(value);
     }
   });
 }
