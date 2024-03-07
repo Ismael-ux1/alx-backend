@@ -10,6 +10,7 @@ export default function createPushNotificationsJobs(jobs, queue) {
 
   // For each job in jobs
   for (const jobData of jobs) {
+    
     // Create a job
     const job = queue.create('push_notification_code_3', jobData)
       .save((err) => {
